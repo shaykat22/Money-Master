@@ -30,53 +30,40 @@
 
                     <div class="my-4">
                         <h3 class="text-2xl text-center mb-2">Income</h3>
-                        <td>
+                        <label> Income: </label><input id="income-input" type=" text">
+                        <!-- <td>
                             Income:
                         </td>
                         <td>
                             <input id="income-input" class="border border-gray-400	rounded " type="text"
                                 placeholder="your monthly income">
-                        </td>
+                        </td> -->
                     </div>
                     <div class="my-4">
                         <h3 class="text-2xl text-center mb-2">Expenses</h3>
-                        <td>
-                            Food:
-                        </td>
-                        <td>
-                            <input id="food-input" class="border border-gray-400	rounded " type="text"
-                                placeholder="your monthly income">
-                        </td>
 
-                    </div>
-                    <div class="my-2 ">
-                        <td>
-                            Rent:
-                        </td>
-                        <td>
-                            <input id="rent-input" class="border  border-gray-400	rounded " type="text"
-                                placeholder="your monthly income">
-                        </td>
-                    </div>
-                    <div>
-                        <td>
-                            Cloths:
-                        </td>
-                        <td>
-                            <input id="cloth-input" class="border  border-gray-400	rounded " type="text"
-                                placeholder="your monthly income">
-                        </td>
+                        <label> Food: </label><input id="food-input" type=" text"> <br>
+                        <br>
+                        <label> Rent: </label><input id="rent-input" type=" text"> <br>
+                        <br>
+                        <label class="mt-4"> Cloths: </label><input id="cloth-input" type=" text"> <br>
                     </div>
 
 
                     <button id="calculate-button"
                         class="bg-yellow-600 px-4 mt-4 rounded py-2 text-white font-medium">Calculate</button>
                     <h3 class="text-2xl text-center my-2">Total Expenses:<span id="total-result">00</span></h3>
-                    <h3 class="text-2xl text-center my-2">Balance:00</h3>
+                    <h3 class="text-2xl text-center my-2">Balance:<span id="total-balance">00</span> </h3>
 
-
-
+                    <label> save: </label><input id="save-input " type=" text"> <span> %</span><button
+                        id="savings-button" class="bg-yellow-600 px-4 mt-4 rounded py-2 text-white font-medium">
+                        save</button>
+                    <h3 class="text-2xl text-center my-2">Saving Amount:<span id="saving-text">0</span> </h3>
+                    <h3 class="text-2xl text-center my-2">Remaining Balance:<span id="remaining-balance">2000</span>
+                    </h3>
                 </div>
+
+            </div>
 
             </div>
 
