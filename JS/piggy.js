@@ -44,32 +44,16 @@ document.getElementById('savings-button').addEventListener('click', function () 
 
     const balanceTotal = document.getElementById('total-balance');
     const balanceTotalText = parseFloat(balanceTotal.innerText);
-    //const previousBalanceTotal = parseFloat(balanceTotalText);
 
     const balanceRemaining = document.getElementById('remaining-balance');
-    const remainingBalanceText = parseFloat(balanceTotal.innerText);
-    //const previousBalanceTotal = parseFloat(balanceTotalText);
-
-
-
 
     //get and update saving amount
     const savingAmount = document.getElementById('saving-text');
-    const savingAmountText = parseFloat(savingAmount.innerText);
 
     //calculate perchantage
     var savingscalc = savingPerchantage / 100;
     const a = savingscalc * incomeInput;
     savingAmount.innerText = a;
-    balanceRemaining.innerText = balanceTotal - a;
-
-
-
-
+    // calculate remaining balance
+    balanceRemaining.innerText = balanceTotalText - a;
 })
-
-function percentage() {
-    var a = Number(document.getElementById("t1").value);
-    var b = Number(document.getElementById("t2").value) / 100;
-    return z
-}
