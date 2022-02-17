@@ -15,7 +15,7 @@ document.getElementById('calculate-button').addEventListener('click', function (
     const incomeInput = document.getElementById('income-input').value;
 
     if (incomeInput <= 0 || foodExpenses <= 0 || rentExpenses <= 0 || clothExpenses <= 0) {
-        alert('negative value does not allow');
+        alert('negative value does not allow'); //error alert
     }
     else {
         const totalAmount = foodExpenses + rentExpenses + clothExpenses;
@@ -36,7 +36,7 @@ document.getElementById('calculate-button').addEventListener('click', function (
             balanceTotal.innerText = previousBalanceTotal + NewBalance;
         }
         else {
-            alert('insufficient balance')
+            alert('insufficient balance') //error message
         }
     }
 })
